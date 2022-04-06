@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <title>teste2</title>
+    <body>
+        <p id="domo"></p>
+        <script>
+            var nome = {
+                primeiro:"fila",
+                segundo: "fado",
+                idade:23,
+                nometodo: function(){
+                    return this.primeiro + " " + this.segundo;
+                }
+            };
+            document.getElementById("domo").innerHTML=nome.nometodo();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+       <!--<meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta rel="stylesheet" href="./style.css"/>--> 
+        <style>
+            body, ul, li, p{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            font-size: 1.2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: blanchedalmond;
+        }
+        .header{
+            background-color: black;
+            display: flex; /*alinha os conteudos um ao lado do outro/ display=forma como o conteudo vai se dispor na pagina*/
+            justify-content: space-between;/* da um espaço entre os itens selecionados*/
+            align-items: center;/* alinha os itens*/
+            padding: 20px;
+            flex-wrap: wrap;/*wrap= organiza a pagina de forma que seja viszualizado bunitão*/
+        }
+        .menu{
+            display: flex;
+        }
+        .menu li{
+            margin-left: 10px;
+        }
+        .menu li a {
+            display: block;
+            padding: 10px;
+        }
+        img{
+            max-width: 100%;
+            display: block;
+        }
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+        .flex > div{
+            flex:1 1 200px;
+            margin: 10px;
+        }
+        .grid1{
+            display: grid;/*display em grades estilo table*/
+            grid-template-columns: repeat(3,1fr);/* 3*o 1fr*/
+            max-width: 780px;
+            margin: 0 auto; /* auto=alinhamento central automatico*/
+            grid-gap: 10px;/* espaçamento*/
+        }
+        .grid1 > div:nth-child(n+4)/*apartir desse*/{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            align-items: center;
+        }
+        .grid1 > div.anuncio{
+            grid-column: 1;/*coloca o item travado na primeira coluna*/
+            grid-row: 2/5;/*espaço ocupado pelo item em linhas/ ex: apartir da segunda ate a quinta linha entre os itens do topo a base*/
+            display: block;/*deixa o item em seu tamanho original*/
+        }
+        </style>
+        <title>CSS Grid e Flexbox</title>
+
+    </head>
+    <body>
+        <header class="header">
+            <a>logo</a>
+            <nav>
+                <ul class="menu">
+                    <li><a >Sobre</a></li>
+                    <li><a >Produtos</a></li>
+                    <li><a >Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="flex">
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+        </section>
+        <br/>
+        <br/>
+        <h1>gg</h1>
+        <section class="grid1">
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div>
+                <img src="image.png">
+                <p>Legends of tomorow</p>
+            </div>
+            <div class="anuncio">
+                <img src="image.png">
+                <p>commercial</p>
+            </div>
+        </section>
+    </body>
+</html>

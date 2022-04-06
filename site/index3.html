@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <title></title>
+    <body>
+        <p id="domo"></p>
+        <script>
+            var x ,text;
+            x=["banana", "maçã", "abacate"];
+            
+            text = "<ul>";
+            x.forEach(frutinha);
+            text += "<ul>";
+            document.getElementById("domo").innerHTML = text;
+
+            function frutinha(value){
+                text += "<li>" + value + "</li>";
+            }
+
+            
+
+        </script>
+    </body>
+</html>
