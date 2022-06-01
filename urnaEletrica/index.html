@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>urna eletronica</title>
+</head>
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="d-1">
+                <div class="d-1-left">
+                    <div class="d-1-1">
+                        <span>SEU VOTO:</span>
+                    </div>
+                    <div class="d-1-2">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="d-1-3">
+                        <div class="num pisca"></div>
+                        <div class="num"></div>
+                    </div>
+                    <div class="d-1-4">
+                        Nome: xxxxxxxxxxx <br>
+                        Partido: xx <br>
+                        Vice-prefeito: xxxxxxxxxxxxxxxx
+                    </div>
+                </div>
+                <div class="d-1-right">
+                    <div class="d-1-image">
+                        <div class="image"></div>
+                        Prefeito
+                    </div>
+                    <div class="d-1-image small">
+                        <div class="image"></div>
+                        Vice-prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="d-2">
+                Digite o numero do seu voto: <br/>
+                CONFIRMA para confirmar <br>
+                CORRIGE para reiniciar o voto.
+
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="linhaN">
+                <div class="btn" onclick="clicou('1')">1</div>
+                <div class="btn" onclick="clicou('2')">2</div>
+                <div class="btn" onclick="clicou('3')">3</div>
+            </div>
+            <div class="linhaN">
+                <div class="btn" onclick="clicou('4')">4</div>
+                <div class="btn" onclick="clicou('5')">5</div>
+                <div class="btn" onclick="clicou('6')">6</div>
+            </div>
+            <div class="linhaN">
+                <div class="btn" onclick="clicou('7')">7</div>
+                <div class="btn" onclick="clicou('8')">8</div>
+                <div class="btn" onclick="clicou('9')">9</div>
+            </div>
+            <div class="linhaN">
+                <div class="btn" onclick="clicou('0')">0</div>
+            </div>
+            <div class="linhaN">
+                <div class="btn btn-branco" onclick="branco()">BRANCO</div>
+                <div class="btn btn-corrige" onclick="corrige()">CORRIGE</div>
+                <div class="btn btn-confirma" onclick="confirma()">CONFIRMA!</div>
+            </div>
+        </div>
+    </div>
+    <script src="/eleição.js"></script>
+    <script src="/scrtipt.js"></script>
+</body>
+</html>
